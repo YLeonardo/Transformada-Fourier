@@ -1,0 +1,67 @@
+{
+  "_from": "csshake",
+  "_id": "csshake@1.5.3",
+  "_inBundle": false,
+  "_integrity": "sha512-1vSyB+N/rdq7QSfqKs/Aj/LKzWFy3xdWpgEuJ63nJw1DmHDTC4rbzkagH9/aVT5otbX77i1cq99OPDIFJofAkQ==",
+  "_location": "/csshake",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "csshake",
+    "name": "csshake",
+    "escapedName": "csshake",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/csshake/-/csshake-1.5.3.tgz",
+  "_shasum": "5561f310c2c1e5a74a5f665b44294594b30b425a",
+  "_spec": "csshake",
+  "_where": "D:\\Descargas\\FINAL\\FINAL",
+  "author": {
+    "name": "Lionel T",
+    "email": "elrumordelaluz@hotmail.com",
+    "url": "http://elrumordelaluz.com"
+  },
+  "bugs": {
+    "url": "https://github.com/elrumordelaluz/csshake/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Some CSS classes to move your DOM!",
+  "devDependencies": {
+    "gzip-size": "4.1.0",
+    "node-sass": "4.7.2",
+    "pretty-bytes": "4.0.2",
+    "pug": "2.0.0-rc.4"
+  },
+  "homepage": "https://github.com/elrumordelaluz/csshake",
+  "keywords": [
+    "css",
+    "transitions",
+    "animations"
+  ],
+  "license": "MIT",
+  "main": "dist/csshake.css",
+  "name": "csshake",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elrumordelaluz/csshake.git"
+  },
+  "scripts": {
+    "build": "npm run build:raw && npm run build:min && npm run build:docs && node downloadIndex.js",
+    "build:docs": "node-sass scss/csshake.scss -o docs --output-style compressed",
+    "build:min": "mkdir -p dist/min && node-sass --output-style compressed scss/ -o dist/min && npm run suffix && npm run move",
+    "build:raw": "node-sass scss/ -o dist/",
+    "move": "mv dist/min/*.css dist && rm -r dist/min",
+    "start": "npm run build && npm run gzip && npm run gzip:all",
+    "suffix": "for file in dist/min/*.css; do mv \"$file\" \"${file%.css}.min.css\"; done",
+    "watch": "node-sass --watch scss/csshake.scss -o docs"
+  },
+  "version": "1.5.3"
+}

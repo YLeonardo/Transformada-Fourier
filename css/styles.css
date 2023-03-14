@@ -1,0 +1,105 @@
+:root{
+    --first: #001B48;
+    --second: #02457A;
+    --third: #018ABE;
+    --fourth: #97CADB;
+    --fifth : #d6e8ee;
+    --white: #fff;
+}
+
+#boton{
+    color:#d6e8ee;
+}
+body
+{
+    font-family: 'Quicksand', sans-serif!important;
+    background-color:var(--white);
+    color:#000;
+}
+
+h2
+{
+    text-align: center;
+    color: #fff;
+}
+.img-circle{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+button
+{
+    background-color: var(--third)!important;
+}
+#canvas{
+    margin-top: 30px;
+}
+#form1, #form2{
+    margin: 10px 0px;
+    padding: 35px 10px;
+    border-radius: 15px;
+    background-color: #018ABE;
+}
+
+span[id^=polinomio3],span[id^=polinomio4],span[id^=resultadosP], span[id^="resultado"]
+{
+    font-size: 1.5rem;
+    border-radius: 99rem;
+    color: #001B48;
+}
+
+#comparaciones{
+    color: #001B48;
+    font-size: 2rem;
+    font-weight:bolder;
+}
+
+#cota{
+    text-align: center;
+}
+
+#dyv {
+  border-top: 2px solid #FAFAFA;
+  margin-top: 52px;
+}
+.termino-algebraico{
+    display: flex;
+    flex-direction: row;
+}
+.termino-algebraico label{
+    font-size: 15px;
+    margin-right: 10px;
+}
+.bloque{
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 3px;
+}
+.entrada{
+    width: 50px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid rgb(233, 216, 216);
+}
+.entrada:focus{
+    outline: none;
+}
+.array-container{
+    background-color: transparent!important;
+}
+.array-element{
+    background-color: #018ABE!important;
+    margin: 3px 5px;
+    border: none!important;
+    display: flex;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+}
+.array-element p{
+    margin: 0px;
+}

@@ -161,7 +161,6 @@ h2 {
 .botones {
   position: relative;
   z-index: 999999;
-  cursor: pointer;
   text-align: center;
 
   height: 100vh;
@@ -195,7 +194,7 @@ h2 {
   margin: 0 auto;
   width: 300px;
   height: 1px;
-  background: #00d9ec;
+  background: rgb(1, 138, 190);
   margin-top: 10px;
 }
 
