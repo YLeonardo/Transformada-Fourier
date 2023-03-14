@@ -1,4 +1,4 @@
-# Transformada De Fourier Animado En Web:
+# Transformada De Fourier Animado En Web
 
 SOLUCIÓN DIVIDE Y VENCERÁS: TRANSFORMADA RÁPIDA DE FOURIER
 
