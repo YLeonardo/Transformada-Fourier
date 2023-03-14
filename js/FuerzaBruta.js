@@ -156,7 +156,7 @@ let pruebani = () => {
             tl.add({
                 targets: [elementos[x], elementos[x+1]],
                 color: "#fff",
-                backgroundColor: "#008000",
+                backgroundColor: "#018ABE",
                 duration:200
             },'+=200')
             tl.add({
@@ -173,7 +173,7 @@ let pruebani = () => {
             tl.add({
                 targets: [elementos[x]],
                 color: "#fff",
-                backgroundColor: "#dc143c",
+                backgroundColor: "#018ABE",
                 duration:200
             },'+=200')
             tl.add({
@@ -194,7 +194,7 @@ let pruebani = () => {
         tl.add({
             targets: [arr],
             color: "#fff",
-            backgroundColor: "#008000",
+            backgroundColor: "#018ABE",
             duration: 200
         }, '+=200')
         tl.add({
@@ -208,7 +208,7 @@ let pruebani = () => {
         tl.add({
             targets: [r],
             color: "#fff",
-            backgroundColor: "#008000",
+            backgroundColor: "#018ABE",
             duration: 200
         }, '+=200')
         tl.add({
@@ -230,7 +230,6 @@ let pruebani = () => {
     tl.add({
         targets: [compa],
         color: "#fff",
-        backgroundColor: "#483d8b",
         duration: 200
     }, '+=200')
 }

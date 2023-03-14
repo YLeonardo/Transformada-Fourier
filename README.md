@@ -1,2 +1,4 @@
-# Transformada De Fourier
-Solución fuerza bruta y divide y venderás
+# Transformada De Fourier Animado En Web:
+
+SOLUCIÓN DIVIDE Y VENCERÁS: TRANSFORMADA RÁPIDA DE FOURIER
+SOLUCIÓN BRUTA: TRANSFORMADA DISCRETA DE FOURIER
