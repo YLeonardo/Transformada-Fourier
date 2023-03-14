@@ -131,9 +131,29 @@ const cuartoBloqueAnimacion = () => {
     resultados.innerHTML = html;
 }
 
+const botonRegresar = () => {
+    let boton3 = document.getElementById("boton3");
+    boton3.style.display = "none";
+
+    const boton = document.createElement('button');
+    boton.setAttribute('type', 'button');
+    boton.textContent = 'Regresar';
+    boton.style.position = "fixed";
+    boton.classList.add('btn', 'btn-primary');
+    boton.style.bottom = "50px";
+    boton.style.left = "50%";
+    boton.style.transform = "translateX(-50%)";
+    boton.style.fontSize = "1.5rem";
+    document.body.appendChild(boton);
+    boton.addEventListener('click', function() {
+        window.location.href = 'index.html';
+      });
+}
+
 
 formu.addEventListener("submit", (event) => {
     event.preventDefault();
+    botonRegresar();
     guardar();
     multiplicarPolinomio();
     reduccionTerminos();
