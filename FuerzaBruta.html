@@ -91,7 +91,7 @@
             <!-- <h1 id="countdown">
                         </h1> -->
                         
-                        <section id="contenedorprincipal" class="container-fluid">
+                        <section id="contenedorprincipal" class="container-fluid" style="margin-top: 400px;">
                           <form id="formu2">
                               <section>
                                   <div class="">
@@ -187,12 +187,17 @@
                               </section>
                           </form>
                       </section>
+                      
                   
                       <section class="d-flex justify-content-center">
                           <section class="container" id="contenedorAnimacion">
                   
                               <section class="d-flex justify-content-center">
                                   <span id="comparaciones" class="p-4" style="color: transparent;">
+                                    <div  class="d-flex justify-content-center mt-4">
+                                      <button id="boton3"  type="button" class="btn btn-primary" style="margin-top: 50px;" onClick="Regresar()"  >
+                                         Regresar </button>
+                                    </div>
                                     No. de operaciones: 33
                                   </span>
                               </section>
@@ -211,7 +216,8 @@
                               <section class="container">
                                   <section class="d-flex flex-wrap m-4" id="resultados"></section>
                               </section>
-                      
+                              <section class="container" style="margin-top: 500px;">
+                            </section>
                               <br><br>
                           </section>
                       </section>
@@ -279,7 +285,6 @@
           </div>
         </li>
         <!-- Contact -->
-
         <li class="layer" data-depth="0.20">
           <div class="contact">
             © <span id="copyright"><script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script></span>
@@ -309,6 +314,11 @@
          document.getElementById("polinomio22").value = Math.floor(Math.random() * (100-1+1)) + 1;
          document.getElementById("polinomio21").value = Math.floor(Math.random() * (100-1+1)) + 1;
          document.getElementById("polinomio20").value = Math.floor(Math.random() * (100-1+1)) + 1;
+      }
+
+      function Regresar()
+      {          
+        window.location.href = "index.html";
       }
         </script>
 
